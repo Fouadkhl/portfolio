@@ -1,0 +1,27 @@
+*{   
+    /* --p-font: 1.25rem; */
+    padding: 0; 
+    margin: 0;
+    font-family: 'DM Sans', sans-serif;
+    scroll-behavior: smooth;
+    width: auto;
+}
+
+:root{
+    --bg-color: #181818 ;
+    --secondary-bg-color : #212121;
+    --footer-front-color : #323232;
+    --footer-front-color : #212121;
+    --text-primary-color : #fff;
+    --text-secondary-color : #828282;
+    --text-project-color : #e0e0e0;
+    --green-color:#27AE60 ;
+    --big-text-font: 3rem ;
+    --big-title-font: 2.25rem ;
+}
+
+body{
+    background-color: var(--bg-color);
+    color: white;
+    padding-top: 150px;
+}

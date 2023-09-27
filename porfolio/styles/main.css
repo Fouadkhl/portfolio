@@ -1,0 +1,385 @@
+.info span{
+    color: var(--green-color);
+}
+
+.info h1{
+    font-size: var(--big-text-font);
+}
+
+.info p{
+    font-size: 1.25rem;
+}
+
+.home-description{
+    margin-top: 16px;
+    margin-bottom: 16px;
+    color: var(--text-secondary-color);
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.my-photo{
+    height: 380px;
+    width: 380px;
+}
+
+.download-cv-button{
+    background-color: var(--green-color);
+    color: white;
+    border: none;
+    padding: 11px 24px;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-right: 8px;
+    transition: opacity  0.15s;
+    vertical-align: top;
+}
+
+.buttons{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.start-project-button {
+    background-color: transparent;
+    border-color: white;
+    border-style: solid;
+    border-width: 1px;
+    color: white;
+    padding: 10px 24px;
+    border-radius: 2px;
+    cursor: pointer; 
+    margin-right: 8px;
+    vertical-align: top;
+    transition: background-color 0.2s ,color 0.2s ;
+    text-decoration: none;
+}
+
+.start-project-anchor{
+    text-decoration: none;
+    color: white;
+}
+
+.download-cv-button:hover , .start-project-button:hover{
+    opacity: 0.8;
+}
+
+/* about me */
+
+.aboutme {
+    margin-top: 6rem;
+}
+
+.services  {
+    margin-top: 3rem ;
+}
+.projects , .skills ,.certificates{
+    margin-top: 7rem;
+}
+
+
+.aboutme h1 , .services h1 , .projects h1 , .skills h1 ,.certificates h1 , 
+.quote h1{
+    font-size: var( --big-title-font);
+    font-weight: 500;
+    text-align :center ;
+}
+
+
+.aboutme p{
+    font-size: 1.25rem;
+    font-weight: 400;
+    text-align :center ;
+    padding: 4rem 9rem;
+    color: var(--text-secondary-color);
+}
+
+/* services */
+.content {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 4rem;
+}
+
+.card{
+    background-color:var(--secondary-bg-color) ;
+    width: 12rem;
+    padding: 2rem 2rem;
+    margin: 2rem 2rem ;
+    position: relative;
+    transition: ease 0.2s;
+}
+
+.card img{
+    width: 40px;
+}
+
+.card-text{
+    font-size: 1.8rem;
+    color: var(--text-secondary-color);
+    margin-top: 1rem;
+}
+
+.card::after{
+    content: '';
+    position: absolute;
+    width: 0px;
+    background-color: var(--green-color);
+    height: 2px;
+    bottom: 0px;
+    left: 0;
+    transition: ease .40s;
+}
+
+.card:hover::after{
+    width: 100%;
+}   
+
+.card:hover{
+    scale: 1.1;
+}
+
+/* project */
+
+.chips {
+    padding: 4rem 9rem 1rem 9rem;
+}
+.chip {
+    display: inline-block;
+    padding: 8px 16px;
+    margin: 5px;
+    font-size: 14px;
+    border-radius: 100px;
+    background-color: var(--secondary-bg-color);
+    cursor: pointer;
+}
+/* Styling for the selected chip */
+.chip.selected {
+    background-color: var(--green-color);
+    color: white;
+}
+
+
+.my-projects{
+    display: flex;  
+    flex-shrink: 0;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-right: 4rem;
+    padding-left: 4rem;
+    justify-content: center ;
+
+}
+
+.project{
+    max-height: 21em;
+    width: 21rem;
+    position: relative; 
+    margin: 0.75rem ;  
+    overflow: hidden;
+}
+
+.project-info{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--bg-color);
+    opacity: 0.92; 
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.4s ease;
+}
+
+
+.project:hover .project-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    visibility: visible;
+    opacity: 0.95;
+}
+
+.project:hover {
+    /* transform: rotate(4deg); */
+    scale: 1.1;
+    transition: transform  0.4s ease , scale 0.4s ease;
+}
+
+.project::after{
+    content: '';
+    position: absolute;
+    width: 0px;
+    background-color: var(--green-color);
+    height: 4px;
+    bottom: 0px;
+    left: 0;
+    transition: ease .40s;
+}
+
+.project:hover::after{
+    width: 100%;
+} 
+
+.project-info-title{
+    margin: 1rem 1.5rem 0.75rem 1.5rem;
+}
+.project-info-description{
+    margin: 0rem 1.5rem;
+    color: var(--text-project-color);
+}
+.github-project-link{
+    margin-right: 1rem;
+}
+
+.project-links{
+    margin: 1.5rem 2rem ;
+}
+
+.project-photo{
+    flex: 1;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 1px;
+
+}
+
+
+
+/* skills  */
+.skill-image {
+    height: 4rem;
+    padding: 1rem 2rem;
+}
+.skills div {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: 4rem 9rem;   
+
+}
+
+.my-certifications{
+     display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 4rem 0rem; 
+}
+
+.certificate-image{
+    height: 16rem;
+    border-radius: 2px;
+    padding: 1rem 1rem;
+}
+
+.quote-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.quote-item q{
+    position: absolute;
+    font-size: 2.5rem;
+    text-align: center;
+
+}
+
+.quote-item img{
+    scale: 0.7;
+}
+
+
+@media screen and (min-width: 650px) and (max-width: 850px) {
+    .skills div {
+        margin: 0rem 2rem;
+        margin-top: 4rem;  
+        justify-content: center;
+    }
+
+}
+
+
+@media screen and (max-width: 650px) {
+
+    body{
+        padding-left: 0rem;
+        padding-top: 4rem;
+    }
+
+    .my-photo{
+        height: 300px;
+        width: 300px;
+    }
+
+    .home-description{
+        padding: 0rem 1rem;
+    }
+    .info h1{
+        font-size: 2.4rem;
+        padding: 0rem 1rem;
+    }
+    .aboutme p{
+        font-size: 1rem;
+        padding: 4rem 2rem;
+    }
+    .chips {
+        padding: 4rem 1rem 1rem 1rem;
+    }
+
+    .quote-item{
+        margin-top: 1rem;
+    }
+
+    .quote-item q{
+        font-size: 1.5rem;    
+    }
+    
+    .quote-item img{
+        width: 90%;
+    }
+    .skill-image {
+        height: 2rem;
+        padding: 1rem 1rem;
+    }
+    .skills div {
+        margin: 0rem 2rem;
+        margin-top: 4rem;  
+        justify-content: center;
+    }
+    .buttons{
+        padding: 0rem 1rem;
+    }
+
+    .certificate-image{
+        height: 12rem;
+    }
+
+    .my-projects{
+
+        padding-right: 1rem;
+        padding-left: 1rem;
+    
+    }
+    
+    .project{
+        max-height: 21em;
+        width: 21rem;
+        position: relative; 
+        margin: 0.75rem ;  
+        overflow: hidden;
+    }
+    
+}
+

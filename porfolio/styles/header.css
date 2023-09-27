@@ -1,0 +1,143 @@
+header{
+    background-color: var(--bg-color);
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    padding-top: 1.5rem ;
+    padding-bottom: 1rem ;
+    padding-right:  4rem;
+    padding-left:  4rem;
+    display: flex;
+    z-index: 1000;
+    align-items: center;
+    justify-content: space-between;
+
+    transition: 0.3s;
+}
+
+.logo-first-name ,.logo-last-name {
+    font-size: 1.8rem;  
+    font-weight: 500;
+}
+
+.logo-first-name{
+    color: white;
+}
+.logo-last-name{
+    color: var(--green-color);
+    padding-right: 1rem; 
+}
+
+.navlist{
+    list-style-type: none;
+    display: flex;
+}
+
+.navlist li{
+    position: relative;
+}
+
+.navlist a{
+    font-size: 1rem;
+    color: white;
+    text-decoration: none;
+    padding-left: 18px;
+    padding-right: 18px;
+}
+
+.navlist a::after{
+    content: '';
+    position: absolute;
+    width: 0px;
+    background-color: var(--green-color);
+    height: 2px;
+    bottom: -3px;
+    left: 0;
+    transition: ease .40s;
+}
+
+.navlist a:hover::after{
+    width: 100%;
+}
+
+.humberger-icon{
+    width: 24px;
+    color: var(--green-color);
+    z-index: 1001;
+    cursor: pointer;
+    display: none;
+}
+
+
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1003; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: var(--text-secondary-color);
+    display: block;
+    transition: 0.3s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: white;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+  .first-nav-item{
+    margin-top: 1rem;
+  }
+
+
+  
+  @media screen and (min-width: 768px) {
+    .menu-icon{
+        display: none;
+      }
+  }
+
+
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media only screen and (max-width: 768px) {
+
+    .menu-icon{
+        display: block;
+        display: inline-block
+    }
+
+
+    header{
+        padding: 0.75rem 1rem;
+    }
+
+    .navlist{
+        display: none;
+    }
+
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }

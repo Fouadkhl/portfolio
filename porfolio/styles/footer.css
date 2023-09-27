@@ -1,0 +1,224 @@
+/* *******************footer******************** */
+footer{
+    position: relative;
+    margin-top: 10rem;
+}
+
+.start-project-front{
+    position: absolute;
+    background-color: white;
+    top: -2.5rem;
+    left: 10rem;
+    right: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.25rem 3rem;
+    z-index: 5;
+    max-height: 6rem;
+}
+
+.start-project-back{
+    z-index: 4;
+    position: absolute;
+    background-color: white;
+    top: -3.75rem;
+    left: 8.75rem;
+    right: 11.25rem;
+    height: 7.75rem;
+    opacity: 0.2;
+}
+
+.start-project-p{
+    color: black;
+    font-size: 2rem;
+}
+
+.start-project-span{
+    font-size: 1.25rem;
+}
+
+
+.start-project-button-footer{
+    background-color: var(--green-color);
+    color: white;
+    border: none;
+    padding: 1rem 3rem;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: opacity  0.15s;
+    vertical-align: top;
+    text-decoration: none ;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: clip;
+}
+.start-project-button-footer:hover{
+    opacity: 0.8;
+}
+
+
+.my-contacts{
+    background-color: var(--secondary-bg-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 10rem 0rem 5rem 0rem;
+}
+
+.main-contact{
+    margin-bottom: 1rem;
+}
+
+.contact-icons , .contact-info-item {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+.other-res{
+    list-style-type: none;
+}
+
+.img-contact{
+    margin-right: 1rem;
+    margin-top: 2rem;
+    transition: scale 0.2s ease;
+}
+
+.contact-info-item{
+    margin-top: 1rem;
+    color: var(--text-secondary-color);
+    font-size: 1.2rem;
+
+}
+
+
+.img-contact-info{
+    margin-right: 1rem;
+    
+}
+
+.img-contact:hover{
+    border: 1px  solid var(--green-color);
+    border-radius: 5px;
+    cursor: pointer;
+    scale: 1.1;
+}
+
+
+.other-res-item{
+    color: var(--text-secondary-color);
+    margin-top: 1rem;
+    font-size: 1.2rem;
+}
+
+.other-res-item:hover{
+    color: white;
+    cursor: pointer;
+}
+
+.copyright{
+    text-align: center;
+    padding: 2rem 0rem;
+    color: var(--text-secondary-color);
+}
+
+
+@media screen and (min-width: 650px) and (max-width: 850px) {
+
+    .start-project-front{
+        left: 5rem;
+        right: 5rem;
+    }
+    
+    .start-project-back{
+        left: 3.75rem;
+        right: 7.25rem;
+        height: 6.5rem;
+    }
+    
+    .start-project-p{
+        font-size: 1.5rem;
+    }
+    .start-project-span{
+        font-size: 1rem;
+    }
+    .start-project-button-footer{
+        font-size: 14px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: clip;
+    }
+}
+
+
+@media screen and (min-width: 360px) and  (max-width: 650px) {
+    .start-project-front{
+        left: 3rem;
+        right: 3rem;
+        padding: 1rem 1rem;
+    }
+
+    
+    .start-project-back{
+        left: 2rem;
+        right: 4rem;
+        height: 4.5rem;
+    }
+    
+    .start-project-p{   
+        font-size: 1rem;
+    }
+    .start-project-span{
+        font-size: 0.75rem;
+    }
+    .start-project-button-footer{
+        padding: 0.75rem 1.5rem;
+        font-size: 14px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    } 
+    .my-contacts{
+        justify-content: left;
+        padding-left: 1rem;
+    }
+    .contact-info{
+        padding-right: 1rem;
+    }
+
+
+}
+
+@media screen and ( max-width: 460px) {
+
+    .start-project-front{
+        left: 1rem;
+        right: 1rem;
+        padding: 1rem 1rem;
+    }
+
+    
+    .start-project-back{
+        left: 0.25rem;
+        right: 0rem;
+        right: 2rem;
+    }
+
+    .start-project-p{
+        font-size: 1rem;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        }
+    .start-project-span{
+        font-size: 0.75rem;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+
+
