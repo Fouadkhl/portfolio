@@ -84,6 +84,7 @@ footer{
 .img-contact{
     margin-right: 1rem;
     margin-top: 2rem;
+    padding: 1px;
     transition: scale 0.2s ease;
 }
 
@@ -101,10 +102,10 @@ footer{
 }
 
 .img-contact:hover{
+    padding: 0px;
     border: 1px  solid var(--green-color);
     border-radius: 5px;
     cursor: pointer;
-    scale: 1.1;
 }
 
 
