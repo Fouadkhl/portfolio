@@ -64,6 +64,7 @@
 .start-project-anchor{
     text-decoration: none;
     color: white;
+    font-size: .9rem;
 }
 
 .download-cv-button:hover , .start-project-button:hover{
